@@ -1,0 +1,22 @@
+{
+  "name": "gpthemes",
+  "displayName": "My VS Code Themes",
+  "description": "A custom color theme for VS Code",
+  "version": "0.0.1",
+  "publisher": "Paulo Santos",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Minimal One",
+        "uiTheme": "vs-dark",
+        "path": "./themes/minimal_one.json"
+      }
+    ]
+  }
+}
