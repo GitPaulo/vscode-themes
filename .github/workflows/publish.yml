@@ -26,6 +26,8 @@ jobs:
         with:
           tag_name: ${{ github.ref_name }}
           name: "Release ${{ github.ref_name }}"
-          body: "Automated release for ${{ github.ref_name }}"
+          body: "Automated VSIX release for ${{ github.ref_name }}"
           files: "*.vsix"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       
