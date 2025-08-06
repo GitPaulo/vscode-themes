@@ -24,6 +24,9 @@ code --install-extension gitpaulo-vscode-themes.vsix
 
 ### For codespaces consider
 
+> [!NOTE]
+> Probably just install in a profile (from outside a codespace workspace)
+
 For example, structure it like this:
 
 ```
