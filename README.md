@@ -10,6 +10,9 @@ and
 ```sh
 code --install-extension .
 ```
+
+<img width="490" height="70" alt="image" src="https://github.com/user-attachments/assets/ab120943-1a55-43ee-8087-71a93f54c7e8" />
+
 ### Install a release
 
 ```sh
@@ -20,6 +23,9 @@ code --install-extension gitpaulo-vscode-themes.vsix
 ```
 
 ### For codespaces consider
+
+> [!NOTE]
+> Probably just install in a profile (from outside a codespace workspace)
 
 For example, structure it like this:
 
@@ -44,8 +50,6 @@ my-project/
       ]
     }
   },
-  "postCreateCommand": "export THEME_VERSION=v0.0.1 && \
-  curl -L -o gitpaulo-vscode-themes.vsix https://github.com/GitPaulo/vscode-themes/releases/download/$THEME_VERSION/gitpaulo-vscode-themes-$THEME_VERSION.vsix && \
-  code --install-extension gitpaulo-vscode-themes.vsix"
+  "postCreateCommand": "export THEME_VERSION=v0.0.1 && curl -L -o gitpaulo-vscode-themes.vsix https://github.com/GitPaulo/vscode-themes/releases/download/$THEME_VERSION/gitpaulo-vscode-themes-$THEME_VERSION.vsix && code --install-extension gitpaulo-vscode-themes.vsix"
 }
 ```
