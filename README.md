@@ -17,8 +17,12 @@ code --install-extension .
 
 ```sh
 curl -L -o gitpaulo-vscode-themes.vsix \
-  https://github.com/GitPaulo/vscode-themes/releases/download/v0.0.1/gitpaulo-vscode-themes-0.0.1.vsix
-# Install it into VS Code
+  https://github.com/GitPaulo/vscode-themes/releases/download/v0.0.x/gitpaulo-vscode-themes-0.0.x.vsix
+```
+
+install it,
+
+```sh
 code --install-extension gitpaulo-vscode-themes.vsix
 ```
 
