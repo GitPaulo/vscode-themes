@@ -13,9 +13,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Minimal One",
+        "label": "GitPaulo Github",
         "uiTheme": "vs-dark",
-        "path": "./themes/minimal_one.json"
+        "path": "./themes/gitpaulo_github.json"
       }
     ]
   }

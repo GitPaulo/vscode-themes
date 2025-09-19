@@ -30,12 +30,12 @@
     "dropdown.foreground": "#ffffffde",
     "dropdown.listBackground": "#272727",
     "editor.background": "#222222",
-    "editor.findMatchBackground": "#353535",
-    "editor.findMatchBorder": "#222222",
-    "editor.findMatchHighlightBackground": "#222222",
-    "editor.findMatchHighlightBorder": "#222222",
-    "editor.findRangeHighlightBackground": "#222222",
-    "editor.findRangeHighlightBorder": "#222222",
+    "editor.findMatchBackground": "#0969DA55",
+    "editor.findMatchBorder": "#0969DA",
+    "editor.findMatchHighlightBackground": "#0969DA33",
+    "editor.findMatchHighlightBorder": "#0969DA",
+    "editor.findRangeHighlightBackground": "#0969DA22",
+    "editor.findRangeHighlightBorder": "#0969DA",
     "editor.foreground": "#ffffffde",
     "editor.hoverHighlightBackground": "#27272799",
     "editor.lineHighlightBackground": "#27272761",
@@ -54,7 +54,7 @@
     "editorHoverWidget.background": "#222222",
     "editorHoverWidget.border": "#222222",
     "editorInfo.foreground": "#81a2be",
-    "editorLineNumber.foreground": "#333333",
+    "editorLineNumber.foreground": "#3b3b3b",
     "editorLink.activeForeground": "#81a2be",
     "editorOverviewRuler.addedForeground": "#b5bd68",
     "editorOverviewRuler.deletedForeground": "#e29090",
@@ -1066,7 +1066,7 @@
         "entity.name.function.shell"
       ],
       "settings": {
-        "foreground": "#CEB0D3"
+        "foreground": "#beb0d3"
       }
     },
     {
@@ -1074,7 +1074,7 @@
         "entity.name.tag"
       ],
       "settings": {
-        "foreground": "#9BD4B2"
+        "foreground": "#b2d49b"
       }
     },
     {
@@ -1099,6 +1099,16 @@
       "scope": "token.debug-token",
       "settings": {
         "foreground": "#B267E6"
+      }
+    },
+    {
+      "scope": [
+        "support.function.builtin",
+        "support.function",
+        "support.type.builtin"
+      ],
+      "settings": {
+        "foreground": "#8250DF"
       }
     }
   ]
