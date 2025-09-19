@@ -1051,10 +1051,9 @@
         "keyword",
         "storage.modifier",
         "storage.type",
-        "variable.parameter"
       ],
       "settings": {
-        "foreground": "#9BD4B2"
+        "foreground": "#9bd4c9"
       }
     },
     {
@@ -1066,7 +1065,7 @@
         "entity.name.function.shell"
       ],
       "settings": {
-        "foreground": "#beb0d3"
+        "foreground": "#c5b9ce"
       }
     },
     {
@@ -1098,17 +1097,7 @@
     {
       "scope": "token.debug-token",
       "settings": {
-        "foreground": "#B267E6"
-      }
-    },
-    {
-      "scope": [
-        "support.function.builtin",
-        "support.function",
-        "support.type.builtin"
-      ],
-      "settings": {
-        "foreground": "#8250DF"
+        "foreground": "#a866d8"
       }
     }
   ]

@@ -5,10 +5,17 @@ git clone git@github.com:GitPaulo/vscode-themes.git
 cd vscode-themes
 ```
 
-and
+and use vsce to build,
 
 ```sh
-code --install-extension .
+npm install -g vsce
+vsce package
+```
+
+install the generated `.vsix` file,
+
+```sh
+code --install-extension gitpaulo-vscode-themes-0.0.x.vsix
 ```
 
 <img width="490" height="70" alt="image" src="https://github.com/user-attachments/assets/ab120943-1a55-43ee-8087-71a93f54c7e8" />

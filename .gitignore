@@ -137,3 +137,6 @@ dist
 
 # ignore the extensions
 *.vsix
+
+# ignore root test
+test.go

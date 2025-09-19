@@ -2,7 +2,7 @@
   "name": "gitpaulo-vscode-themes",
   "displayName": "GitPaulo VSCode Themes",
   "description": "@GitPaulo's VSCode Themes!",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "GitPaulo",
   "engines": {
     "vscode": "^1.50.0"
