@@ -1,0 +1,3 @@
+# Exclude tests and CI configs
+test_files/**
+.github/**
