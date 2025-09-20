@@ -17,8 +17,8 @@ jobs:
           node-version: 20
       - name: Install vsce & deps
         run: |
-          npm install -g vsce
-          npm install
+          npm install -g @vscode/vsce
+          npm ci
       - name: Package VSIX
         run: vsce package
       - name: 🚀 Upload VSIX to GitHub Release
