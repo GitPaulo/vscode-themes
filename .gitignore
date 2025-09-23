@@ -140,3 +140,6 @@ dist
 
 # ignore root test
 test.go
+
+# ignore package lock
+package-lock.json
