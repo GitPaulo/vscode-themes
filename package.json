@@ -5,7 +5,7 @@
   "version": "0.0.4",
   "publisher": "GitPaulo",
   "scripts": {
-    "dev": "rm gitpaulo-vscode-themes-*.vsix && vsce package && npm run extension",
+    "dev": "rm -f gitpaulo-vscode-themes-*.vsix && vsce package && npm run extension",
     "extension": "code --install-extension gitpaulo-vscode-themes-*.vsix"
   },
   "engines": {
