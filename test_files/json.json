@@ -1,0 +1,323 @@
+{
+  "name": "Comprehensive JSON Test",
+  "version": "1.0.0",
+  "description": "A comprehensive JSON file testing all data types and structures",
+  "license": "MIT",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com",
+    "url": "https://example.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/example/repo.git"
+  },
+  "keywords": [
+    "json",
+    "test",
+    "comprehensive",
+    "syntax",
+    "highlighting"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --coverage",
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "axios": "^1.4.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4",
+    "jest": "^29.5.0",
+    "eslint": "^8.42.0"
+  },
+  "config": {
+    "port": 3000,
+    "host": "localhost",
+    "apiUrl": "https://api.example.com/v1",
+    "timeout": 5000,
+    "retries": 3,
+    "debug": true,
+    "ssl": false
+  },
+  "numbers": {
+    "integer": 42,
+    "negativeInteger": -273,
+    "float": 3.14159,
+    "negativeFloat": -2.71828,
+    "exponential": 1.23e10,
+    "negativeExponential": -6.626e-34,
+    "zero": 0,
+    "largeNumber": 9007199254740991
+  },
+  "booleans": {
+    "truthy": true,
+    "falsy": false,
+    "enabled": true,
+    "disabled": false
+  },
+  "nullValues": {
+    "empty": null,
+    "notSet": null,
+    "undefined": null
+  },
+  "strings": {
+    "simple": "Hello, World!",
+    "withQuotes": "He said, \"Hello!\"",
+    "withBackslash": "C:\\Users\\Documents",
+    "withNewline": "Line 1\nLine 2",
+    "withTab": "Column1\tColumn2",
+    "withUnicode": "Emoji: \u263A \u2665",
+    "url": "https://example.com/path?query=value&foo=bar",
+    "empty": "",
+    "multiline": "This is a very long string that would normally span multiple lines in other languages but in JSON it must be on a single line"
+  },
+  "arrays": {
+    "numbers": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "strings": [
+      "apple",
+      "banana",
+      "cherry"
+    ],
+    "mixed": [
+      1,
+      "two",
+      3.0,
+      true,
+      null
+    ],
+    "empty": [],
+    "nested": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        6
+      ],
+      [
+        7,
+        8,
+        9
+      ]
+    ],
+    "objects": [
+      {
+        "id": 1,
+        "name": "First"
+      },
+      {
+        "id": 2,
+        "name": "Second"
+      },
+      {
+        "id": 3,
+        "name": "Third"
+      }
+    ]
+  },
+  "nestedObjects": {
+    "level1": {
+      "level2": {
+        "level3": {
+          "level4": {
+            "level5": {
+              "deepValue": "You found me!",
+              "deepNumber": 12345
+            }
+          }
+        }
+      }
+    }
+  },
+  "complexStructure": {
+    "users": [
+      {
+        "id": 1,
+        "username": "john_doe",
+        "email": "john@example.com",
+        "age": 30,
+        "isActive": true,
+        "roles": [
+          "admin",
+          "user"
+        ],
+        "profile": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "bio": "Software developer",
+          "website": "https://johndoe.com",
+          "social": {
+            "twitter": "@johndoe",
+            "github": "johndoe",
+            "linkedin": "in/johndoe"
+          }
+        },
+        "settings": {
+          "theme": "dark",
+          "notifications": true,
+          "language": "en-US",
+          "timezone": "America/New_York"
+        },
+        "metadata": {
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-12-01T14:45:00Z",
+          "lastLogin": "2023-12-31T09:00:00Z"
+        }
+      },
+      {
+        "id": 2,
+        "username": "jane_smith",
+        "email": "jane@example.com",
+        "age": 28,
+        "isActive": false,
+        "roles": [
+          "user"
+        ],
+        "profile": {
+          "firstName": "Jane",
+          "lastName": "Smith",
+          "bio": null,
+          "website": null,
+          "social": {
+            "twitter": null,
+            "github": "janesmith",
+            "linkedin": null
+          }
+        },
+        "settings": {
+          "theme": "light",
+          "notifications": false,
+          "language": "en-GB",
+          "timezone": "Europe/London"
+        },
+        "metadata": {
+          "createdAt": "2023-03-20T08:15:00Z",
+          "updatedAt": "2023-11-15T16:20:00Z",
+          "lastLogin": "2023-12-15T11:30:00Z"
+        }
+      }
+    ],
+    "products": [
+      {
+        "id": 101,
+        "name": "Laptop",
+        "category": "Electronics",
+        "price": 999.99,
+        "inStock": true,
+        "quantity": 50,
+        "tags": [
+          "computer",
+          "portable",
+          "work"
+        ],
+        "specs": {
+          "cpu": "Intel i7",
+          "ram": "16GB",
+          "storage": "512GB SSD",
+          "screen": "15.6 inch"
+        },
+        "reviews": [
+          {
+            "user": "john_doe",
+            "rating": 5,
+            "comment": "Excellent laptop!",
+            "date": "2023-10-01"
+          },
+          {
+            "user": "jane_smith",
+            "rating": 4,
+            "comment": "Good, but expensive",
+            "date": "2023-10-15"
+          }
+        ]
+      },
+      {
+        "id": 102,
+        "name": "Wireless Mouse",
+        "category": "Accessories",
+        "price": 29.99,
+        "inStock": true,
+        "quantity": 200,
+        "tags": [
+          "mouse",
+          "wireless",
+          "ergonomic"
+        ],
+        "specs": {
+          "connectivity": "Bluetooth",
+          "batteryLife": "6 months",
+          "dpi": 1600
+        },
+        "reviews": []
+      }
+    ]
+  },
+  "specialCharacters": {
+    "backslash": "\\",
+    "forwardSlash": "/",
+    "quote": "\"",
+    "backspace": "\b",
+    "formFeed": "\f",
+    "newline": "\n",
+    "carriageReturn": "\r",
+    "tab": "\t"
+  },
+  "edgeCases": {
+    "emptyString": "",
+    "emptyArray": [],
+    "emptyObject": {},
+    "nullValue": null,
+    "zero": 0,
+    "negativeZero": -0,
+    "maxSafeInteger": 9007199254740991,
+    "minSafeInteger": -9007199254740991
+  },
+  "apiResponse": {
+    "status": "success",
+    "code": 200,
+    "data": {
+      "items": [
+        {
+          "id": 1,
+          "value": "Item 1"
+        },
+        {
+          "id": 2,
+          "value": "Item 2"
+        },
+        {
+          "id": 3,
+          "value": "Item 3"
+        }
+      ],
+      "pagination": {
+        "page": 1,
+        "perPage": 10,
+        "total": 3,
+        "totalPages": 1,
+        "hasNext": false,
+        "hasPrev": false
+      }
+    },
+    "timestamp": "2023-12-31T23:59:59.999Z",
+    "requestId": "550e8400-e29b-41d4-a716-446655440000"
+  }
+}

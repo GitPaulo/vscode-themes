@@ -4,25 +4,6 @@
   // ============================================================================
   "$schema": "vscode://schemas/color-theme",
   "type": "dark",
-  "semanticHighlighting": true,
-  // ============================================================================
-  // Semantic Token Colors
-  // Language-specific semantic highlighting for enhanced code understanding
-  // ============================================================================
-  "semanticTokenColors": {
-    "parameter": {
-      "foreground": "#ffa657"
-    },
-    "type": {
-      "foreground": "#79c0ff"
-    },
-    "namespace": {
-      "foreground": "#ff7b72"
-    },
-    "macro": {
-      "foreground": "#79c0ff"
-    }
-  },
   // ============================================================================
   // VSCode UI Colors
   // Editor, panels, and workspace interface colors
@@ -61,12 +42,12 @@
     "editor.findMatchHighlightBackground": "#0969DA33",
     "editor.findMatchHighlightBorder": "#0969DA",
     "editor.findRangeHighlightBackground": "#0969DA22",
-    "editor.findRangeHighlightBorder": "#096bda74",
+    "editor.findRangeHighlightBorder": "#0969DA",
     "editor.foreground": "#ffffffde",
     "editor.hoverHighlightBackground": "#27272799",
     "editor.lineHighlightBackground": "#27272761",
     "editor.selectionBackground": "#353535",
-    "editor.selectionHighlightBackground": "#272727ac",
+    "editor.selectionHighlightBackground": "#272727",
     "editorCursor.background": "#222222",
     "editorCursor.foreground": "#ffffffde",
     "editorError.foreground": "#e29090",
@@ -146,7 +127,7 @@
     "listFilterWidget.background": "#81a2be",
     "listFilterWidget.noMatchesOutline": "#81a2be",
     "listFilterWidget.outline": "#81a2be",
-    "minimap.findMatchHighlight": "#81a2beae",
+    "minimap.findMatchHighlight": "#81a2be",
     "minimap.selectionHighlight": "#ffffffde",
     "panel.background": "#222222",
     "panel.border": "#222222",
@@ -213,430 +194,192 @@
   },
   // ============================================================================
   // Syntax Token Colors
-  // Code highlighting rules for all programming languages
-  // Based on GitHub's official color palette from Primer Design System
+  // Minimal color scheme: white text with subtle grey accents
   // ============================================================================
   "tokenColors": [
+    // Italic for *emphasis* markdown or other markup
     {
-      "scope": [
-        "comment",
-        "punctuation.definition.comment",
-        "string.comment"
-      ],
+      "scope": "emphasis",
       "settings": {
-        "foreground": "#7d8590"
+        "fontStyle": "italic"
       }
     },
+    // Bold for **strong** markdown or similar constructs
     {
-      "scope": [
-        "constant.other.placeholder",
-        "constant.character"
-      ],
+      "scope": "strong",
       "settings": {
-        "foreground": "#ff7b72"
-      }
-    },
-    {
-      "scope": [
-        "constant",
-        "entity.name.constant",
-        "variable.other.constant",
-        "variable.other.enummember",
-        "variable.language",
-        "entity"
-      ],
-      "settings": {
-        "foreground": "#79c0ff"
-      }
-    },
-    {
-      "scope": [
-        "entity.name",
-        "meta.export.default",
-        "meta.definition.variable"
-      ],
-      "settings": {
-        "foreground": "#ffa657"
-      }
-    },
-    {
-      "scope": [
-        "variable.parameter.function",
-        "meta.jsx.children",
-        "meta.block",
-        "meta.tag.attributes",
-        "entity.name.constant",
-        "meta.object.member",
-        "meta.embedded.expression"
-      ],
-      "settings": {
-        "foreground": "#e6edf3"
-      }
-    },
-    {
-      "scope": "entity.name.function",
-      "settings": {
-        "foreground": "#d2a8ff"
-      }
-    },
-    {
-      "scope": [
-        "entity.name.tag",
-        "support.class.component"
-      ],
-      "settings": {
-        "foreground": "#7ee787"
-      }
-    },
-    {
-      "scope": "keyword",
-      "settings": {
-        "foreground": "#ff7b72"
-      }
-    },
-    {
-      "scope": [
-        "storage",
-        "storage.type"
-      ],
-      "settings": {
-        "foreground": "#ff7b72"
-      }
-    },
-    {
-      "scope": [
-        "storage.modifier.package",
-        "storage.modifier.import",
-        "storage.type.java"
-      ],
-      "settings": {
-        "foreground": "#e6edf3"
-      }
-    },
-    {
-      "scope": [
-        "string",
-        "string punctuation.section.embedded source"
-      ],
-      "settings": {
-        "foreground": "#a5d6ff"
-      }
-    },
-    {
-      "scope": "support",
-      "settings": {
-        "foreground": "#79c0ff"
-      }
-    },
-    {
-      "scope": "meta.property-name",
-      "settings": {
-        "foreground": "#79c0ff"
-      }
-    },
-    {
-      "scope": "variable",
-      "settings": {
-        "foreground": "#ffa657"
-      }
-    },
-    {
-      "scope": "variable.other",
-      "settings": {
-        "foreground": "#e6edf3"
-      }
-    },
-    {
-      "scope": "invalid.broken",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#ffa198"
-      }
-    },
-    {
-      "scope": "invalid.deprecated",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#ffa198"
-      }
-    },
-    {
-      "scope": "invalid.illegal",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#ffa198"
-      }
-    },
-    {
-      "scope": "invalid.unimplemented",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#ffa198"
-      }
-    },
-    {
-      "scope": "invalid.unimplemented",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#ffa198"
-      }
-    },
-    {
-      "scope": "carriage-return",
-      "settings": {
-        "fontStyle": "italic underline",
-        "background": "#ff7b72",
-        "foreground": "#0d1117",
-        "content": "^M"
-      }
-    },
-    {
-      "scope": "message.error",
-      "settings": {
-        "foreground": "#ffa198"
-      }
-    },
-    {
-      "scope": "string variable",
-      "settings": {
-        "foreground": "#79c0ff"
-      }
-    },
-    {
-      "scope": [
-        "source.regexp",
-        "string.regexp"
-      ],
-      "settings": {
-        "foreground": "#a5d6ff"
-      }
-    },
-    {
-      "scope": [
-        "string.regexp.character-class",
-        "string.regexp constant.character.escape",
-        "string.regexp source.ruby.embedded",
-        "string.regexp string.regexp.arbitrary-repitition"
-      ],
-      "settings": {
-        "foreground": "#a5d6ff"
-      }
-    },
-    {
-      "scope": "string.regexp constant.character.escape",
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#7ee787"
-      }
-    },
-    {
-      "scope": "support.constant",
-      "settings": {
-        "foreground": "#79c0ff"
-      }
-    },
-    {
-      "scope": "support.variable",
-      "settings": {
-        "foreground": "#79c0ff"
-      }
-    },
-    {
-      "scope": "support.type.property-name.json",
-      "settings": {
-        "foreground": "#7ee787"
-      }
-    },
-    {
-      "scope": "meta.module-reference",
-      "settings": {
-        "foreground": "#79c0ff"
-      }
-    },
-    {
-      "scope": "punctuation.definition.list.begin.markdown",
-      "settings": {
-        "foreground": "#ffa657"
-      }
-    },
-    {
-      "scope": [
-        "markup.heading",
-        "markup.heading entity.name"
-      ],
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#79c0ff"
-      }
-    },
-    {
-      "scope": "markup.quote",
-      "settings": {
-        "foreground": "#7ee787"
-      }
-    },
-    {
-      "scope": "markup.italic",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#e6edf3"
-      }
-    },
-    {
-      "scope": "markup.bold",
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#e6edf3"
-      }
-    },
-    {
-      "scope": [
-        "markup.underline"
-      ],
-      "settings": {
-        "fontStyle": "underline"
-      }
-    },
-    {
-      "scope": [
-        "markup.strikethrough"
-      ],
-      "settings": {
-        "fontStyle": "strikethrough"
-      }
-    },
-    {
-      "scope": "markup.inline.raw",
-      "settings": {
-        "foreground": "#79c0ff"
-      }
-    },
-    {
-      "scope": [
-        "markup.deleted",
-        "meta.diff.header.from-file",
-        "punctuation.definition.deleted"
-      ],
-      "settings": {
-        "background": "#490202",
-        "foreground": "#ffa198"
-      }
-    },
-    {
-      "scope": [
-        "punctuation.section.embedded"
-      ],
-      "settings": {
-        "foreground": "#ff7b72"
-      }
-    },
-    {
-      "scope": [
-        "markup.inserted",
-        "meta.diff.header.to-file",
-        "punctuation.definition.inserted"
-      ],
-      "settings": {
-        "background": "#04260f",
-        "foreground": "#7ee787"
-      }
-    },
-    {
-      "scope": [
-        "markup.changed",
-        "punctuation.definition.changed"
-      ],
-      "settings": {
-        "background": "#5a1e02",
-        "foreground": "#ffa657"
-      }
-    },
-    {
-      "scope": [
-        "markup.ignored",
-        "markup.untracked"
-      ],
-      "settings": {
-        "foreground": "#161b22",
-        "background": "#79c0ff"
-      }
-    },
-    {
-      "scope": "meta.diff.range",
-      "settings": {
-        "foreground": "#d2a8ff",
         "fontStyle": "bold"
       }
     },
+    // Line/block comments in all languages
     {
-      "scope": "meta.diff.header",
+      "scope": "comment",
       "settings": {
-        "foreground": "#79c0ff"
+        "foreground": "#666666"
       }
     },
+    // String literals: quoted text, template strings, etc.
     {
-      "scope": "meta.separator",
+      "scope": "string",
       "settings": {
-        "fontStyle": "bold",
-        "foreground": "#79c0ff"
+        "foreground": "#CCCCCC"
       }
     },
-    {
-      "scope": "meta.output",
-      "settings": {
-        "foreground": "#79c0ff"
-      }
-    },
+    // Numbers, null, primitive types, built-in properties
+    // Covers: numeric constants, `null`, DOM properties, etc.
     {
       "scope": [
-        "brackethighlighter.tag",
-        "brackethighlighter.curly",
-        "brackethighlighter.round",
-        "brackethighlighter.square",
-        "brackethighlighter.angle",
-        "brackethighlighter.quote"
+        // ── Numeric literals ──
+        "constant.numeric", // All languages: 42, 3.14, 0xFF
+        // ── Null / nil / undefined equivalents ──
+        "constant.language.null", // JS/TS/Python/C#
+        "constant.language.undefined", // JS/TS explicit undefined
+        "constant.language.nil", // Lua
+        "constant.language.none", // Python None
+        "constant.language.null.go", // Go nil (some grammars use this)
+        "variable.language.null", // alt naming in some grammars
+        "variable.language.nil", // alt naming
+        // ── Boolean literals ──
+        "constant.language.boolean", // true / false (generic)
+        "constant.language.true", // some grammars split these
+        "constant.language.false",
+        // ── Misc template constants ──
+        "meta.property-name",
+        "meta.property-value",
+        "support.constant.handlebars" // Handlebars templates
       ],
       "settings": {
-        "foreground": "#7d8590"
+        "foreground": "#FFFFFF"
       }
     },
-    {
-      "scope": "brackethighlighter.unmatched",
-      "settings": {
-        "foreground": "#ffa198"
-      }
-    },
+    // built-in functions
     {
       "scope": [
-        "constant.other.reference.link",
-        "string.other.link"
+        "support.function",
+        "support.constant.builtin"
       ],
       "settings": {
-        "foreground": "#a5d6ff"
+        "foreground": "#BBBBBB"
       }
     },
+    // this and super
+    {
+      "scope": [
+        "variable.language.this",
+        "variable.language.super"
+      ],
+      "settings": {
+        "foreground": "#FFFFFF",
+        "fontStyle": "bold"
+      }
+    },
+    // Keywords and storage modifiers/types: if, return, class, const, public…
+    {
+      "scope": [
+        "keyword",
+        "storage.modifier",
+        "storage.type",
+        // ── Primitive type keywords (int, string, bool, etc.) ──
+        "support.type.primitive", // shared by JS/TS/C#/Go
+        "storage.type.boolean.go", // Go bool
+        "storage.type.string.go", // Go string
+        "storage.type.numeric.go", // Go int/float family
+        "storage.type.cs", // C# built-in primitives (int, double)
+        "keyword.type.null.ts", // TS null/undefined"
+      ],
+      "settings": {
+        "foreground": "#999999"
+      }
+    },
+    // Classes, object types, and attribute/property names
+    {
+      "scope": [
+        // class / type names
+        "entity.name.type",
+        "entity.other.inherited-class",
+        "support.class",
+        // object / attribute / property names
+        "meta.property.object",
+        "meta.property-name",
+        "variable.other.property",
+        "support.variable.property"
+      ],
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    // HTML/XML tag names or other markup tags
+    {
+      "scope": [
+        "entity.name.tag"
+      ],
+      "settings": {
+        "foreground": "#999999"
+      }
+    },
+    // Diagnostic/info tokens (used by some extensions/linters)
     {
       "scope": "token.info-token",
       "settings": {
         "foreground": "#478aff"
       }
     },
+    // Warnings (lint or compiler warnings)
     {
       "scope": "token.warn-token",
       "settings": {
         "foreground": "#CD9731"
       }
     },
+    // Errors (lint or compiler errors)
     {
       "scope": "token.error-token",
       "settings": {
         "foreground": "#F44747"
       }
     },
+    // Debug-related tokens (breakpoints, logpoints)
     {
       "scope": "token.debug-token",
       "settings": {
         "foreground": "#a866d8"
+      }
+    },
+    // Highlight interpolation & expressions
+    {
+      "scope": [
+        "punctuation.definition.interpolation.begin",
+        "punctuation.definition.interpolation.end",
+        "punctuation.other.placeholder", // for %s, %d etc. if grammar uses this
+        "string.interpolated", // sometimes the whole interpolated part
+        "meta.interpolation", // or `meta.embedded` depending on grammar
+        "constant.other.placeholder.format", // some grammars have this for % formats
+        "punctuation.section.embedded", // for embedded `${}` in template literals
+        // JS / TS
+        "punctuation.section.embedded.begin",
+        "punctuation.section.embedded.end",
+        // C#
+        "punctuation.definition.interpolation.begin.csharp",
+        "punctuation.definition.interpolation.end.csharp",
+        // Python f-strings
+        "punctuation.definition.interpolation.begin.python",
+        "punctuation.definition.interpolation.end.python",
+        // Generic interpolated string scopes
+        "string.interpolated",
+        "meta.interpolation"
+      ],
+      "settings": {
+        "foreground": "#AAAAAA",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.template-expression"
+      ],
+      "settings": {
+        "foreground": "#AAAAAA",
+        "fontStyle": "bold"
       }
     },
     {

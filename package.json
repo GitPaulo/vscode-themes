@@ -20,6 +20,26 @@
         "label": "GitPaulo Github",
         "uiTheme": "vs-dark",
         "path": "./themes/gitpaulo_github.json"
+      },
+      {
+        "label": "GitPaulo Tsoding",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gitpaulo_tsoding.json"
+      },
+      {
+        "label": "GitPaulo Original",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gitpaulo_original.json"
+      },
+      {
+        "label": "GitPaulo Minimal",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gitpaulo_minimal.json"
+      },
+      {
+        "label": "GitPaulo Gruvbox",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gitpaulo_gruvbox.json"
       }
     ]
   }
