@@ -1,6 +1,6 @@
 # `gitpaulo-*` themes
 
-These are my vscode themes that i've used and changed over the years~
+These are my vscode themes that i've used and changed over the years 🫡
 
 <img width="1506" height="935" alt="image" src="https://github.com/user-attachments/assets/762a5f18-ceb2-4780-960d-567759e01f20" />
 
