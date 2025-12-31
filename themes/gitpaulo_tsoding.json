@@ -1,7 +1,7 @@
 {
   "$schema": "vscode://schemas/color-theme",
   "type": "dark",
-  "semanticHighlighting": true
+  "semanticHighlighting": true,
 
   // ============================================================================
   // VSCode UI Colors - Shared across all GitPaulo themes
@@ -190,7 +190,7 @@
     "editorUnnecessaryCode.opacity": "#00000099",
     "editorUnnecessaryCode.border": "#ff6464",
     "tab.activeBorderTop": "#c8d0d7"
-  }
+  },
 
   "tokenColors": [
     {

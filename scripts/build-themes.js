@@ -17,12 +17,24 @@ function mergeJSONCFiles(metadataContent, baseColorsContent, syntaxContent) {
 
   // Add metadata (everything except closing brace)
   const metadataLines = metadataContent.trim().split('\n');
-  lines.push(...metadataLines.slice(0, -1)); // Remove closing }
+  const metadataWithoutClosing = metadataLines.slice(0, -1);
+  // Add comma to last line if it doesn't have one
+  const lastMetadataLine = metadataWithoutClosing[metadataWithoutClosing.length - 1];
+  if (lastMetadataLine && !lastMetadataLine.trim().endsWith(',')) {
+    metadataWithoutClosing[metadataWithoutClosing.length - 1] = lastMetadataLine + ',';
+  }
+  lines.push(...metadataWithoutClosing);
 
   // Add base colors (everything except opening/closing braces)
   const baseLines = baseColorsContent.trim().split('\n');
+  const baseWithoutBraces = baseLines.slice(1, -1);
+  // Add comma to last line if it doesn't have one
+  const lastBaseLine = baseWithoutBraces[baseWithoutBraces.length - 1];
+  if (lastBaseLine && !lastBaseLine.trim().endsWith(',')) {
+    baseWithoutBraces[baseWithoutBraces.length - 1] = lastBaseLine + ',';
+  }
   lines.push('');
-  lines.push(...baseLines.slice(1, -1)); // Remove { and }
+  lines.push(...baseWithoutBraces);
 
   // Add syntax (everything except opening brace)
   const syntaxLines = syntaxContent.trim().split('\n');

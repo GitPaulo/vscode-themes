@@ -144,6 +144,9 @@ test.go
 # ignore package lock
 package-lock.json
 
+# ignore build artifacts
+*.vsix
+
 # Generated theme files (built from src/)
 themes/gitpaulo_*.json
 
