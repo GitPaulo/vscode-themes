@@ -1,0 +1,184 @@
+{
+  "tokenColors": [
+    {
+      "scope": "emphasis",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "strong",
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "comment",
+      "settings": {
+        "foreground": "#ff9b21"
+      }
+    },
+    {
+      "scope": "string",
+      "settings": {
+        "foreground": "#79bf46"
+      }
+    },
+    {
+      "scope": [
+        "constant.numeric",
+        "constant.language.null",
+        "constant.language.undefined",
+        "constant.language.nil",
+        "constant.language.none",
+        "constant.language.null.go",
+        "variable.language.null",
+        "variable.language.nil",
+        "constant.language.boolean",
+        "constant.language.true",
+        "constant.language.false",
+        "meta.property-name",
+        "meta.property-value",
+        "support.constant.handlebars"
+      ],
+      "settings": {
+        "foreground": "#BFC5BF"
+      }
+    },
+    {
+      "scope": [
+        "support.function",
+        "support.constant.builtin"
+      ],
+      "settings": {
+        "foreground": "#EAE2B9"
+      }
+    },
+    {
+      "scope": [
+        "variable.language.this",
+        "variable.language.super"
+      ],
+      "settings": {
+        "foreground": "#BFC5BF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "keyword",
+        "storage.modifier",
+        "storage.type",
+        "support.type.primitive",
+        "storage.type.boolean.go",
+        "storage.type.string.go",
+        "storage.type.numeric.go",
+        "storage.type.cs",
+        "keyword.type.null.ts"
+      ],
+      "settings": {
+        "foreground": "#EAE2B9"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.type",
+        "entity.other.inherited-class",
+        "support.class",
+        "meta.property.object",
+        "meta.property-name",
+        "variable.other.property",
+        "support.variable.property"
+      ],
+      "settings": {
+        "foreground": "#e8e8e8"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.tag"
+      ],
+      "settings": {
+        "foreground": "#EAE2B9"
+      }
+    },
+    {
+      "scope": "token.info-token",
+      "settings": {
+        "foreground": "#478aff"
+      }
+    },
+    {
+      "scope": "token.warn-token",
+      "settings": {
+        "foreground": "#CD9731"
+      }
+    },
+    {
+      "scope": "token.error-token",
+      "settings": {
+        "foreground": "#F44747"
+      }
+    },
+    {
+      "scope": "token.debug-token",
+      "settings": {
+        "foreground": "#a866d8"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.interpolation.begin",
+        "punctuation.definition.interpolation.end",
+        "punctuation.other.placeholder",
+        "string.interpolated",
+        "meta.interpolation",
+        "constant.other.placeholder.format",
+        "punctuation.section.embedded",
+        "punctuation.section.embedded.begin",
+        "punctuation.section.embedded.end",
+        "punctuation.definition.interpolation.begin.csharp",
+        "punctuation.definition.interpolation.end.csharp",
+        "punctuation.definition.interpolation.begin.python",
+        "punctuation.definition.interpolation.end.python",
+        "string.interpolated",
+        "meta.interpolation"
+      ],
+      "settings": {
+        "foreground": "#EAE2B9",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.template-expression"
+      ],
+      "settings": {
+        "foreground": "#EAE2B9",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "unnecessary",
+      "settings": {
+        "foreground": "#ff6464",
+        "fontStyle": "underline"
+      }
+    }
+  ],
+  "semanticTokenColors": {
+    "parameter": {
+      "foreground": "#e2e2e2"
+    },
+    "type": {
+      "foreground": "#bfc5bf"
+    },
+    "namespace": {
+      "foreground": "#919191"
+    },
+    "macro": {
+      "foreground": "#bfc5bf"
+    }
+  },
+  "_syntaxDescription": "Code highlighting rules for all programming languages"
+}

@@ -1,11 +1,9 @@
 {
-  // ============================================================================
-  // Theme Metadata
-  // ============================================================================
   "$schema": "vscode://schemas/color-theme",
-  "type": "dark",
+  "type": "dark"
+
   // ============================================================================
-  // VSCode UI Colors
+  // VSCode UI Colors - Shared across all GitPaulo themes
   // Editor, panels, and workspace interface colors
   // ============================================================================
   "colors": {
@@ -42,12 +40,12 @@
     "editor.findMatchHighlightBackground": "#0969DA33",
     "editor.findMatchHighlightBorder": "#0969DA",
     "editor.findRangeHighlightBackground": "#0969DA22",
-    "editor.findRangeHighlightBorder": "#0969DA",
+    "editor.findRangeHighlightBorder": "#096bda74",
     "editor.foreground": "#ffffffde",
     "editor.hoverHighlightBackground": "#27272799",
     "editor.lineHighlightBackground": "#27272761",
     "editor.selectionBackground": "#353535",
-    "editor.selectionHighlightBackground": "#272727",
+    "editor.selectionHighlightBackground": "#272727ac",
     "editorCursor.background": "#222222",
     "editorCursor.foreground": "#ffffffde",
     "editorError.foreground": "#e29090",
@@ -127,7 +125,7 @@
     "listFilterWidget.background": "#81a2be",
     "listFilterWidget.noMatchesOutline": "#81a2be",
     "listFilterWidget.outline": "#81a2be",
-    "minimap.findMatchHighlight": "#81a2be",
+    "minimap.findMatchHighlight": "#81a2beae",
     "minimap.selectionHighlight": "#ffffffde",
     "panel.background": "#222222",
     "panel.border": "#222222",
@@ -191,78 +189,63 @@
     "editorUnnecessaryCode.opacity": "#00000099",
     "editorUnnecessaryCode.border": "#ff6464",
     "tab.activeBorderTop": "#c8d0d7"
-  },
-  // ============================================================================
-  // Syntax Token Colors
-  // Minimal color scheme: white text with subtle grey accents
-  // ============================================================================
+  }
+
   "tokenColors": [
-    // Italic for *emphasis* markdown or other markup
     {
       "scope": "emphasis",
       "settings": {
         "fontStyle": "italic"
       }
     },
-    // Bold for **strong** markdown or similar constructs
     {
       "scope": "strong",
       "settings": {
         "fontStyle": "bold"
       }
     },
-    // Line/block comments in all languages
     {
       "scope": "comment",
       "settings": {
-        "foreground": "#666666"
+        "foreground": "#6A6A6A"
       }
     },
-    // String literals: quoted text, template strings, etc.
     {
       "scope": "string",
       "settings": {
-        "foreground": "#CCCCCC"
+        "foreground": "#cdc168"
       }
     },
-    // Numbers, null, primitive types, built-in properties
-    // Covers: numeric constants, `null`, DOM properties, etc.
     {
       "scope": [
-        // ── Numeric literals ──
-        "constant.numeric", // All languages: 42, 3.14, 0xFF
-        // ── Null / nil / undefined equivalents ──
-        "constant.language.null", // JS/TS/Python/C#
-        "constant.language.undefined", // JS/TS explicit undefined
-        "constant.language.nil", // Lua
-        "constant.language.none", // Python None
-        "constant.language.null.go", // Go nil (some grammars use this)
-        "variable.language.null", // alt naming in some grammars
-        "variable.language.nil", // alt naming
-        // ── Boolean literals ──
-        "constant.language.boolean", // true / false (generic)
-        "constant.language.true", // some grammars split these
+        "constant.numeric",
+        "constant.language.null",
+        "constant.language.undefined",
+        "constant.language.nil",
+        "constant.language.none",
+        "constant.language.null.go",
+        "variable.language.null",
+        "variable.language.nil",
+        "constant.language.boolean",
+        "constant.language.true",
         "constant.language.false",
-        // ── Misc template constants ──
         "meta.property-name",
         "meta.property-value",
-        "support.constant.handlebars" // Handlebars templates
+        "support.constant.handlebars"
       ],
       "settings": {
         "foreground": "#FFFFFF"
       }
     },
-    // built-in functions
     {
       "scope": [
         "support.function",
         "support.constant.builtin"
       ],
       "settings": {
-        "foreground": "#BBBBBB"
+        "foreground": "#C0C0C0"
       }
     },
-    // this and super
     {
       "scope": [
         "variable.language.this",
@@ -273,32 +256,27 @@
         "fontStyle": "bold"
       }
     },
-    // Keywords and storage modifiers/types: if, return, class, const, public…
     {
       "scope": [
         "keyword",
         "storage.modifier",
         "storage.type",
-        // ── Primitive type keywords (int, string, bool, etc.) ──
-        "support.type.primitive", // shared by JS/TS/C#/Go
-        "storage.type.boolean.go", // Go bool
-        "storage.type.string.go", // Go string
-        "storage.type.numeric.go", // Go int/float family
-        "storage.type.cs", // C# built-in primitives (int, double)
-        "keyword.type.null.ts", // TS null/undefined"
+        "support.type.primitive",
+        "storage.type.boolean.go",
+        "storage.type.string.go",
+        "storage.type.numeric.go",
+        "storage.type.cs",
+        "keyword.type.null.ts"
       ],
       "settings": {
-        "foreground": "#999999"
+        "foreground": "#C0C0C0"
       }
     },
-    // Classes, object types, and attribute/property names
     {
       "scope": [
-        // class / type names
         "entity.name.type",
         "entity.other.inherited-class",
         "support.class",
-        // object / attribute / property names
         "meta.property.object",
         "meta.property-name",
         "variable.other.property",
@@ -308,68 +286,58 @@
         "foreground": "#FFFFFF"
       }
     },
-    // HTML/XML tag names or other markup tags
     {
       "scope": [
         "entity.name.tag"
       ],
       "settings": {
-        "foreground": "#999999"
+        "foreground": "#C0C0C0"
       }
     },
-    // Diagnostic/info tokens (used by some extensions/linters)
     {
       "scope": "token.info-token",
       "settings": {
         "foreground": "#478aff"
       }
     },
-    // Warnings (lint or compiler warnings)
     {
       "scope": "token.warn-token",
       "settings": {
         "foreground": "#CD9731"
       }
     },
-    // Errors (lint or compiler errors)
     {
       "scope": "token.error-token",
       "settings": {
         "foreground": "#F44747"
       }
     },
-    // Debug-related tokens (breakpoints, logpoints)
     {
       "scope": "token.debug-token",
       "settings": {
         "foreground": "#a866d8"
       }
     },
-    // Highlight interpolation & expressions
     {
       "scope": [
         "punctuation.definition.interpolation.begin",
         "punctuation.definition.interpolation.end",
-        "punctuation.other.placeholder", // for %s, %d etc. if grammar uses this
-        "string.interpolated", // sometimes the whole interpolated part
-        "meta.interpolation", // or `meta.embedded` depending on grammar
-        "constant.other.placeholder.format", // some grammars have this for % formats
-        "punctuation.section.embedded", // for embedded `${}` in template literals
-        // JS / TS
+        "punctuation.other.placeholder",
+        "string.interpolated",
+        "meta.interpolation",
+        "constant.other.placeholder.format",
+        "punctuation.section.embedded",
         "punctuation.section.embedded.begin",
         "punctuation.section.embedded.end",
-        // C#
         "punctuation.definition.interpolation.begin.csharp",
         "punctuation.definition.interpolation.end.csharp",
-        // Python f-strings
         "punctuation.definition.interpolation.begin.python",
         "punctuation.definition.interpolation.end.python",
-        // Generic interpolated string scopes
         "string.interpolated",
         "meta.interpolation"
       ],
       "settings": {
-        "foreground": "#AAAAAA",
+        "foreground": "#B0B0B0",
         "fontStyle": "bold"
       }
     },
@@ -378,7 +346,7 @@
         "punctuation.definition.template-expression"
       ],
       "settings": {
-        "foreground": "#AAAAAA",
+        "foreground": "#B0B0B0",
         "fontStyle": "bold"
       }
     },
@@ -389,5 +357,6 @@
         "fontStyle": "underline"
       }
     }
-  ]
+  ],
+  "_syntaxDescription": "Minimal color scheme: white text with subtle grey accents"
 }

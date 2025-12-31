@@ -2,10 +2,11 @@
   "name": "gitpaulo-vscode-themes",
   "displayName": "GitPaulo VSCode Themes",
   "description": "@GitPaulo's VSCode Themes!",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "GitPaulo",
   "scripts": {
-    "dev": "rm -f gitpaulo-vscode-themes-*.vsix && vsce package && npm run extension",
+    "build": "node scripts/build-themes.js",
+    "dev": "npm run build && rm -f gitpaulo-vscode-themes-*.vsix && vsce package && npm run extension",
     "extension": "code --install-extension gitpaulo-vscode-themes-*.vsix"
   },
   "engines": {
