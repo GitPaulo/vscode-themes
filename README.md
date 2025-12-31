@@ -1,22 +1,6 @@
-## How To
+# `gitpaulo-*` themes
 
-```sh
-git clone git@github.com:GitPaulo/vscode-themes.git
-cd vscode-themes
-```
-
-and use vsce to build,
-
-```sh
-npm install -g vsce
-vsce package
-```
-
-install the generated `.vsix` file,
-
-```sh
-code --install-extension gitpaulo-vscode-themes-0.0.x.vsix
-```
+<img width="1506" height="935" alt="image" src="https://github.com/user-attachments/assets/762a5f18-ceb2-4780-960d-567759e01f20" />
 
 <img width="490" height="70" alt="image" src="https://github.com/user-attachments/assets/ab120943-1a55-43ee-8087-71a93f54c7e8" />
 
@@ -46,21 +30,15 @@ my-project/
 ├── gpthemes/
 │   ├── package.json
 │   └── themes/
-│       └── minimal_one.json
+│       └── gitpaulo-*.json
 ├── ...
 ```
 
-```json
-{
-  "name": "My Codespace Dev Container",
-  "extensions": [],
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "gpthemes"
-      ]
-    }
-  },
-  "postCreateCommand": "export THEME_VERSION=v0.0.1 && curl -L -o gitpaulo-vscode-themes.vsix https://github.com/GitPaulo/vscode-themes/releases/download/$THEME_VERSION/gitpaulo-vscode-themes-$THEME_VERSION.vsix && code --install-extension gitpaulo-vscode-themes.vsix"
-}
+### Local Dev
+
+```sh
+npm run build # build themes
+npm run dev # builds and installs
 ```
+
+Make sure to uninstall if already previously installed or the themes will not update.
