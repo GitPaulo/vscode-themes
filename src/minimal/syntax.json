@@ -15,7 +15,7 @@
     {
       "scope": "comment",
       "settings": {
-        "foreground": "#6A6A6A"
+        "foreground": "#777777"
       }
     },
     {
@@ -72,7 +72,7 @@
         "constant.numeric"
       ],
       "settings": {
-        "foreground": "#B8D0D0"
+        "foreground": "#8BB4D8"
       }
     },
     {
@@ -105,7 +105,7 @@
         "meta.brace.square"
       ],
       "settings": {
-        "foreground": "#A8BEBE"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -114,7 +114,7 @@
         "support.constant.builtin"
       ],
       "settings": {
-        "foreground": "#B8B8B8"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -140,7 +140,7 @@
         "keyword.type.null.ts"
       ],
       "settings": {
-        "foreground": "#B8B8B8"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -162,7 +162,7 @@
         "entity.name.tag"
       ],
       "settings": {
-        "foreground": "#C0C0C0"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -175,7 +175,7 @@
         "keyword.operator.bitwise"
       ],
       "settings": {
-        "foreground": "#A8A8A8"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -195,7 +195,7 @@
         "punctuation.decorator"
       ],
       "settings": {
-        "foreground": "#B8B8B8",
+        "foreground": "#FFFFFF",
         "fontStyle": "italic"
       }
     },
@@ -206,7 +206,7 @@
         "entity.name.goto-label"
       ],
       "settings": {
-        "foreground": "#D0D0D0"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -215,7 +215,7 @@
         "constant.other"
       ],
       "settings": {
-        "foreground": "#B8D0D0"
+        "foreground": "#8BB4D8"
       }
     },
     {
@@ -224,10 +224,9 @@
         "entity.other.attribute"
       ],
       "settings": {
-        "foreground": "#C8C8C8"
+        "foreground": "#FFFFFF"
       }
     },
-
     {
       "scope": [
         "variable.other.constant",
@@ -246,7 +245,7 @@
         "support.type.sys-types"
       ],
       "settings": {
-        "foreground": "#C8C8C8"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -257,7 +256,7 @@
         "meta.preprocessor.macro"
       ],
       "settings": {
-        "foreground": "#A0A0A0"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -265,7 +264,7 @@
         "entity.name.function.preprocessor"
       ],
       "settings": {
-        "foreground": "#B8B8B8"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -275,7 +274,7 @@
         "punctuation.definition.tag.end"
       ],
       "settings": {
-        "foreground": "#A0A0A0"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -295,7 +294,7 @@
         "comment.block.documentation"
       ],
       "settings": {
-        "foreground": "#808080"
+        "foreground": "#777777"
       }
     },
     {
@@ -304,7 +303,7 @@
         "punctuation.definition.annotation"
       ],
       "settings": {
-        "foreground": "#B8B8B8"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -340,7 +339,7 @@
         "keyword.other.unit"
       ],
       "settings": {
-        "foreground": "#A0A0A0"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -359,7 +358,7 @@
         "keyword.control.await"
       ],
       "settings": {
-        "foreground": "#B8B8B8",
+        "foreground": "#FFFFFF",
         "fontStyle": "italic"
       }
     },
@@ -371,7 +370,7 @@
         "keyword.operator.expression.instanceof"
       ],
       "settings": {
-        "foreground": "#B8B8B8"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -380,7 +379,7 @@
         "punctuation.separator.pointer-access"
       ],
       "settings": {
-        "foreground": "#A0A0A0"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -390,7 +389,7 @@
         "meta.tag.block"
       ],
       "settings": {
-        "foreground": "#C0C0C0"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -434,7 +433,7 @@
         "punctuation.definition.interpolation.end.python"
       ],
       "settings": {
-        "foreground": "#B0B0B0",
+        "foreground": "#FFFFFF",
         "fontStyle": "bold"
       }
     },
@@ -443,7 +442,7 @@
         "punctuation.definition.template-expression"
       ],
       "settings": {
-        "foreground": "#B0B0B0",
+        "foreground": "#FFFFFF",
         "fontStyle": "bold"
       }
     },

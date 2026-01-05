@@ -230,13 +230,13 @@
     {
       "scope": "comment",
       "settings": {
-        "foreground": "#7c6f64"
+        "foreground": "#857568"
       }
     },
     {
       "scope": "string",
       "settings": {
-        "foreground": "#a9b665"
+        "foreground": "#b3b31f"
       }
     },
     {
@@ -266,7 +266,7 @@
         "support.constant.builtin"
       ],
       "settings": {
-        "foreground": "#e78a4e"
+        "foreground": "#d3869b"
       }
     },
     {
@@ -275,7 +275,7 @@
         "variable.language.super"
       ],
       "settings": {
-        "foreground": "#d3869b",
+        "foreground": "#e6664d",
         "fontStyle": "bold"
       }
     },
@@ -292,7 +292,7 @@
         "keyword.type.null.ts"
       ],
       "settings": {
-        "foreground": "#d8a657"
+        "foreground": "#ea6962"
       }
     },
     {
@@ -306,7 +306,7 @@
         "support.variable.property"
       ],
       "settings": {
-        "foreground": "#d4be98"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -314,31 +314,31 @@
         "entity.name.tag"
       ],
       "settings": {
-        "foreground": "#EAE2B9"
+        "foreground": "#78a598"
       }
     },
     {
       "scope": "token.info-token",
       "settings": {
-        "foreground": "#478aff"
+        "foreground": "#7daea3"
       }
     },
     {
       "scope": "token.warn-token",
       "settings": {
-        "foreground": "#CD9731"
+        "foreground": "#d8a657"
       }
     },
     {
       "scope": "token.error-token",
       "settings": {
-        "foreground": "#F44747"
+        "foreground": "#ea6962"
       }
     },
     {
       "scope": "token.debug-token",
       "settings": {
-        "foreground": "#a866d8"
+        "foreground": "#d3869b"
       }
     },
     {
@@ -360,7 +360,7 @@
         "meta.interpolation"
       ],
       "settings": {
-        "foreground": "#EAE2B9",
+        "foreground": "#89b482",
         "fontStyle": "bold"
       }
     },
@@ -369,27 +369,27 @@
         "punctuation.definition.template-expression"
       ],
       "settings": {
-        "foreground": "#EAE2B9",
+        "foreground": "#89b482",
         "fontStyle": "bold"
       }
     },
     {
       "scope": "unnecessary",
       "settings": {
-        "foreground": "#ff6464",
+        "foreground": "#ea6962",
         "fontStyle": "underline"
       }
     }
   ],
   "semanticTokenColors": {
     "parameter": {
-      "foreground": "#d4be98"
+      "foreground": "#FFFFFF"
     },
     "type": {
-      "foreground": "#e78a4e"
+      "foreground": "#d3869b"
     },
     "namespace": {
-      "foreground": "#7daea3"
+      "foreground": "#a9b665"
     },
     "macro": {
       "foreground": "#e78a4e"

@@ -136,6 +136,8 @@ func main() {
 		fmt.Println("result:", r)
 	}
 
+	var _ = true && false || false
+
 	var unusedVar int
 
 	// Error handling with panic/recover
