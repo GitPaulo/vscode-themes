@@ -5,6 +5,8 @@
 export const VERSION = '1.0.0';
 export const PI = 3.14159;
 let count = 0n; // BigInt example
+const regex = /test\d+/gi;
+const interpolated = `Version: ${VERSION}, Count: ${count}`;
 
 /**
  * Multi-line JSDoc comment

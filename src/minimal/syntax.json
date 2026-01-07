@@ -44,14 +44,7 @@
       "scope": [
         "constant.numeric",
         "constant.character",
-        "constant.other"
-      ],
-      "settings": {
-        "foreground": "#8BB4D8"
-      }
-    },
-    {
-      "scope": [
+        "constant.other",
         "constant.language.boolean",
         "constant.language.true",
         "constant.language.false",
@@ -61,7 +54,14 @@
         "constant.language.none",
         "constant.language.null.go",
         "variable.language.null",
-        "variable.language.nil",
+        "variable.language.nil"
+      ],
+      "settings": {
+        "foreground": "#8BB4D8"
+      }
+    },
+    {
+      "scope": [
         "entity.name.function",
         "entity.name.function.preprocessor",
         "entity.name.tag",
@@ -150,7 +150,7 @@
         "meta.tag.block"
       ],
       "settings": {
-        "foreground": "#FFFFFF"
+        "foreground": "#ffffffde"
       }
     },
     {
@@ -162,7 +162,7 @@
         "constant.other.caps"
       ],
       "settings": {
-        "foreground": "#FFFFFF"
+        "foreground": "#ffffffde"
       }
     },
     {
@@ -175,7 +175,7 @@
         "keyword.control.await"
       ],
       "settings": {
-        "foreground": "#FFFFFF",
+        "foreground": "#ffffffde",
         "fontStyle": "italic"
       }
     },
@@ -197,7 +197,7 @@
         "constant.other.placeholder.format"
       ],
       "settings": {
-        "foreground": "#FFFFFF"
+        "foreground": "#ffffffde"
       }
     },
     {
